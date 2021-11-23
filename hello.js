@@ -1,1 +1,2 @@
-console.log("Init Branch");
+for(let i=0; i<10; i++)
+	console.log("Main branch");
