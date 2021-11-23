@@ -7,15 +7,45 @@
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
     <title>Airbnbfy</title>
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <noscript></noscript>
-    <div id="root">
-      <h1>한글 난독화</h1>
-      <textarea id="before" cols="50" rows="10"></textarea>
-      <button id="convertButton">변환하기</button>
-      <h2>변환된 문장</h2>
-      <textarea id="after" cols="50" rows="10"></textarea>
+    <div class="mx-auto h-screen flex justify-center font-sans" id="root">
+      <div class="flex-col">
+        <div class="flex justify-center mt-10">
+          <h1 class="text-6xl font-bold">한글 난독화</h1>
+        </div>
+        <div class="mt-8">
+          <textarea 
+            id="before" 
+            cols="60" 
+            rows="10"
+            class="focus:outline-none border-gray-300 border rounded-md">
+        </div>
+        <div class="flex justify-center mt-4">
+          <div class="bg-blue-500 w-52 h-16 rounded-md flex justify-center items-center cursor-pointer hover:bg-blue-700">
+            <button 
+              id="convertButton"
+              class="text-white text-xl font-bold">
+                변환하기
+            </button>
+          </div>
+        </div>
+        <div class="flex justify-center mt-8">
+          <h2 class="text-2xl font-bold">변환된 문장</h2>
+        </div>
+        <div class="mt-4">
+          <textarea 
+            id="before" 
+            cols="60" 
+            rows="10"
+            class="focus:outline-none border-gray-300 border rounded-md">
+        </div>
+      </div>
     </div>
     <script src="app.js"></script>
   </body>
