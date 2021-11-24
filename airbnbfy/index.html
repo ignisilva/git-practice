@@ -20,30 +20,46 @@
           <h1 class="text-6xl font-bold">한글 난독화</h1>
         </div>
         <div class="mt-8">
-          <textarea 
-            id="before" 
-            cols="60" 
+          <textarea
+            id="before"
+            cols="60"
             rows="10"
-            class="focus:outline-none border-gray-300 border rounded-md">
+            class="focus:outline-none border-gray-300 border rounded-md"
+          >
+          </textarea>
         </div>
         <div class="flex justify-center mt-4">
-          <div class="bg-blue-500 w-52 h-16 rounded-md flex justify-center items-center cursor-pointer hover:bg-blue-700">
-            <button 
-              id="convertButton"
-              class="text-white text-xl font-bold">
-                변환하기
-            </button>
-          </div>
+          <button
+            id="convertButton"
+            class="
+              bg-blue-500
+              w-52
+              h-16
+              rounded-md
+              flex
+              justify-center
+              items-center
+              cursor-pointer
+              hover:bg-blue-700
+              text-white text-xl
+              font-bold
+            "
+          >
+            변환하기
+          </button>
         </div>
         <div class="flex justify-center mt-8">
           <h2 class="text-2xl font-bold">변환된 문장</h2>
         </div>
         <div class="mt-4">
-          <textarea 
-            id="before" 
-            cols="60" 
+          <textarea
+            id="after"
+            cols="60"
             rows="10"
-            class="focus:outline-none border-gray-300 border rounded-md">
+            readonly="readonly"
+            class="focus:outline-none border-gray-300 border rounded-md"
+          >
+          </textarea>
         </div>
       </div>
     </div>
